@@ -5,6 +5,13 @@ Gwt base64 support
 
 run mvn install to install this.
 
+add the folling to your pom.xml
+
+        <dependency>
+			<groupId>com.wallissoftware</groupId>
+			<artifactId>gwt-base64</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 
 To use add the following to your gwt.xml file
     	
