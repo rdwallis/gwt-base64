@@ -1,9 +1,12 @@
 package com.wallissoftware.base64.client;
 
+import com.google.inject.Singleton;
+
+@Singleton
 public class Base64Impl implements Base64 {
 
-	@Override
-	public final native String decode(final String text) /*-{
+    @Override
+    public final native String decode(final String text) /*-{
 		text = text.replace(/\s/g, "");
 
 		if (!(/^[a-z0-9\+\/\s]+\={0,2}$/i.test(text)) || text.length % 4 > 0) {
@@ -44,8 +47,8 @@ public class Base64Impl implements Base64 {
 		return result.join("");
 	}-*/;
 
-	@Override
-	public final native String encode(final String text) /*-{
+    @Override
+    public final native String encode(final String text) /*-{
 		if (/([^\u0000-\u00ff])/.test(text)) {
 			throw new Error("Can't base64 encode non-ASCII characters.");
 		}
