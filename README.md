@@ -1,7 +1,13 @@
-gwt-base64
+gwt-codec
 ==========
 
-Gwt base64 support
+This project contains various codec utils I use in my own gwt projects.
+
+###Features
+
+base64 support (For browsers that don't have it, and browsers that already do)
+md5 hashing
+binaryString to UTF-8
 
 run mvn install to install this.
 
@@ -9,13 +15,13 @@ add the folling to your pom.xml
 
     <dependency>
         <groupId>com.wallissoftware</groupId>
-        <artifactId>gwt-base64</artifactId>
+        <artifactId>gwt-codec</artifactId>
         <version>1.0-SNAPSHOT</version>
     </dependency>
 
 To use add the following to your gwt.xml file
     	
-    <inherits name='com.wallissoftware.base64.Base64' />
+    <inherits name='com.wallissoftware.codec.Codec' />
     	
 Then
         
