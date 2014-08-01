@@ -32,15 +32,15 @@
 	</set-property>
 
 
-	<replace-with class="com.wallissoftware.base64.client.Base64Native">
-		<when-type-is class="com.wallissoftware.base64.client.Base64" />
+	<replace-with class="com.wallissoftware.codec.client.Base64Native">
+		<when-type-is class="com.wallissoftware.codec.client.Base64" />
 		<all>
 			<when-property-is name="codec.base64Supported" value="yes" />
 		</all>
 	</replace-with>
 
-	<replace-with class="com.wallissoftware.base64.client.Base64Impl">
-		<when-type-is class="com.wallissoftware.base64.client.Base64" />
+	<replace-with class="com.wallissoftware.codec.client.Base64Impl">
+		<when-type-is class="com.wallissoftware.codec.client.Base64" />
 		<all>
 			<when-property-is name="codec.base64Supported" value="no" />
 		</all>

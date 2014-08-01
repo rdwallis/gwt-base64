@@ -11,8 +11,6 @@ public abstract class Hash {
      *         http://www.webtoolkit.info/
      */
     public static native String MD5(final String string) /*-{
-		//var MD5 = function(string) {
-
 		function RotateLeft(lValue, iShiftBits) {
 			return (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits));
 		}

@@ -1,7 +1,11 @@
 package com.wallissoftware.codec.client;
 
-public interface Base64 {
-	String decode(String base64);
+import com.google.gwt.core.shared.GWT;
 
-	String encode(String input);
+public interface Base64 {
+    public static Base64 INSTANCE = GWT.create(Base64.class);
+
+    String decode(String base64);
+
+    String encode(String input);
 }
